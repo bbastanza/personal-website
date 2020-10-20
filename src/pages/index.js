@@ -27,6 +27,8 @@ function IndexPage() {
           padding: "20px 20px 0 20px",
           textDecoration: "underline",
           textDecorationThickness: 5,
+          width: "auto",
+          color: "#313131",
         }}
       >
         Welcome

@@ -1,14 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import ContactCard from "../components/IndividualComponents/ContactCard"
 import githubImage from "../images/github.png"
 import linkedInImage from "../images/linkedin.png"
 import emailImage from "../images/email.png"
 
 const Connect = () => {
-  const textStyle = {}
   return (
     <Layout>
       <SEO title="Connect" />
@@ -17,6 +15,7 @@ const Connect = () => {
           padding: "20px 20px 0 20px",
           textDecoration: "underline",
           textDecorationThickness: 5,
+          color: "#313131",
         }}
       >
         Connect
@@ -44,14 +43,14 @@ const Connect = () => {
             link="https://github.com/bbastanza"
           />
         </div>
-        <div style={{ marginTop: 0, padding: 20 }}>
+        <div style={{ marginTop: 1, padding: 20 }}>
           <ContactCard
             name="LinkedIn"
             image={linkedInImage}
             link="https://www.linkedin.com/in/brian-bastanza-9035397b"
           />
         </div>
-        <div style={{ padding: 20, marginTop: 14 }}>
+        <div style={{ padding: 20, marginTop: 16 }}>
           <ContactCard
             name="Email"
             image={emailImage}

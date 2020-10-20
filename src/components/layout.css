@@ -605,12 +605,47 @@ pre tt:after {
 }
 .contact:hover {
   scale: 1.05;
-  background-color: #cecece;
+  background-color: #d7f9ff;
 }
 
 .portfolio-image {
   transition: 0.7s;
+  margin-top: 30px;
 }
 .portfolio-image:hover {
   scale: 1.05;
+}
+
+.menu-link {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-link::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transform: scale(0);
+  height: 2px;
+  background-color: white;
+  transform-origin: right;
+  left: 25%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.menu-link:hover::before {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+.menu-link {
+  color: white;
+}
+
+.menu-link:hover {
+  color: white;
+}
+
+.topbar:hover {
+  color: #e7fbff;
 }

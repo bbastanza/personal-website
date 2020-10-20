@@ -40,9 +40,10 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `2rem`,
             justifyContent: "space-between",
-            backgroundColor: "#F8F9FA",
+            backgroundColor: "#f3f3f3",
             borderRadius: 5,
             paddingTop: 12,
+            color: "#313131",
           }}
         >
           <div style={{ display: "flex", padding: 10 }}>
@@ -52,13 +53,19 @@ const Layout = ({ children }) => {
 
             <Link to="/">
               {" "}
-              <button className="btn btn-light">Home</button>
+              <button style={{ margin: 2 }} className="btn btn-info">
+                Home
+              </button>
             </Link>
             <Link to="/Portfolio">
-              <button className="btn btn-light">Portfolio</button>
+              <button style={{ margin: 2 }} className="btn btn-info">
+                Portfolio
+              </button>
             </Link>
             <Link to="/Connect">
-              <button className="btn btn-light">Connect</button>
+              <button style={{ margin: 2 }} className="btn btn-info">
+                Connect
+              </button>
             </Link>
           </div>
         </footer>

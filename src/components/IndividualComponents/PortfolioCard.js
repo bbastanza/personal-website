@@ -4,15 +4,19 @@ export default function PortfolioCard({ data }) {
   return (
     <div className="row" style={{ padding: 40 }}>
       <div className="col-md-6 col-sm-12 row" style={{ padding: 20 }}>
-        <h2 className="col-12">{data.title}</h2>
-        <p className="col-12">{data.description}</p>
+        <h2 className="col-12" style={{ color: "#313131" }}>
+          {data.title}
+        </h2>
+        <p className="col-12" style={{ color: "#313131" }}>
+          {data.description}
+        </p>
         <a href={data.link} rel="noreferrer" target="_blank">
-          <button className="btn btn-dark btn-outline-light">
+          <button style={{ margin: 2 }} className="btn btn-info">
             Check it out here
           </button>
         </a>
         <a href={data.github} rel="noreferrer" target="_blank">
-          <button className="btn btn-dark btn-outline-light">
+          <button style={{ margin: 2 }} className="btn btn-info">
             GitHub Repository
           </button>
         </a>

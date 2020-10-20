@@ -49,6 +49,7 @@ const Portfolio = () => {
           padding: "20px 20px 0 20px",
           textDecoration: "underline",
           textDecorationThickness: 5,
+          color: "#313131",
         }}
       >
         Portfolio
