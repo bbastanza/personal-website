@@ -1,4 +1,5 @@
 import { Link } from "gatsby"
+import Menu from "./IndividualComponents/Menu"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -7,13 +8,14 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#313131`,
       marginBottom: 0,
+      display: "flex",
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `10`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.25rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -27,6 +29,12 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <h6 style={{ color: `white`, textDecoration: `none` }}>
+        Full Stack Web Developer
+      </h6>
+    </div>
+    <div>
+      <Menu />
     </div>
   </header>
 )

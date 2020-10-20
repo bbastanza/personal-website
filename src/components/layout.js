@@ -7,10 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Menu from "./Menu"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -34,16 +34,33 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <Menu />
         <main>{children}</main>
+
         <footer
           style={{
             marginTop: `2rem`,
+            justifyContent: "space-between",
+            backgroundColor: "#F8F9FA",
+            borderRadius: 5,
+            paddingTop: 12,
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <div style={{ display: "flex", padding: 10 }}>
+            <p style={{ marginRight: "auto", padding: "10px 10px 0 10px" }}>
+              © {new Date().getFullYear()} <strong>Brian Bastanza</strong>
+            </p>
+
+            <Link to="/">
+              {" "}
+              <button className="btn btn-light">Home</button>
+            </Link>
+            <Link to="/Portfolio">
+              <button className="btn btn-light">Portfolio</button>
+            </Link>
+            <Link to="/Connect">
+              <button className="btn btn-light">Connect</button>
+            </Link>
+          </div>
         </footer>
       </div>
     </>

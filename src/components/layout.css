@@ -7,6 +7,7 @@ html {
 }
 body {
   margin: 0;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -596,4 +597,20 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.contact {
+  border-radius: 10px;
+  transition: 0.7s;
+}
+.contact:hover {
+  scale: 1.05;
+  background-color: #cecece;
+}
+
+.portfolio-image {
+  transition: 0.7s;
+}
+.portfolio-image:hover {
+  scale: 1.05;
 }
