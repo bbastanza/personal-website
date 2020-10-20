@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default function Menu() {
   const linkStyle = {
     textDecoration: "none",
-    padding: 5,
+    padding: 8,
     borderRadius: 3,
     fontWeight: "bold",
     color: "white",
