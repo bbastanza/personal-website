@@ -637,15 +637,3 @@ pre tt:after {
   transform: scale(1);
   transform-origin: left;
 }
-
-.menu-link {
-  color: white;
-}
-
-.menu-link:hover {
-  color: white;
-}
-
-.topbar:hover {
-  color: #e7fbff;
-}

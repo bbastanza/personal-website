@@ -1,62 +1,68 @@
 import { Link } from "gatsby"
-import Menu from "./IndividualComponents/Menu"
 import PropTypes from "prop-types"
 import React from "react"
-import brian from "../images/brian.jpg"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#007688`,
-      marginBottom: 0,
-      display: "flex",
-    }}
-  >
-    <Link
-      to="/"
-      style={{
-        color: "white",
-        textDecoration: `none`,
-      }}
-    >
-      <div
-        className="menu-link"
-        style={{
-          margin: `10`,
-          maxWidth: 960,
-          padding: `1.25rem 1.0875rem`,
-          marginRight: "auto",
-        }}
+function Header({ siteTitle }) {
+  const linkStyle = {
+    textDecoration: "none",
+    padding: 8,
+    borderRadius: 3,
+    fontWeight: "bold",
+    color: "white",
+  }
+  const activeStyle = {
+    backgroundColor: "white",
+    color: "#313131",
+    padding: "8px 8px 0 8px",
+  }
+
+  return (
+    <header>
+      <nav
+        className="navbar navbar-expand-lg navbar-dark bg-dark"
+        style={{ justifyContent: "space-between" }}
       >
-        <h1 style={{ margin: 0 }}>{siteTitle}</h1>
-        <h6 style={{ color: "white", textDecoration: `none`, marginLeft: 100 }}>
-          Full Stack Web Developer
-        </h6>
-      </div>
-    </Link>
+        <Link to="/" className="navbar-brand  menu-link">
+          <h1>Brian Bastanza</h1>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    <div style={{ margin: "0px 10px 5px auto", display: "flex" }}>
-      <Menu />
-      <img
-        src={brian}
-        style={{
-          height: 100,
-          width: "auto",
-          borderRadius: "50%",
-          margin: "10px 10px 0 10px",
-        }}
-        alt=""
-      />
-    </div>
-  </header>
-)
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ml-auto">
+            <Link to="/" style={linkStyle} activeStyle={activeStyle}>
+              <li className="nav-item  menu-link ">Home</li>
+            </Link>
+            <Link to="/Portfolio" style={linkStyle} activeStyle={activeStyle}>
+              <li className="nav-item  menu-link">Portfolio</li>
+            </Link>
+            <Link to="/Connect" style={linkStyle} activeStyle={activeStyle}>
+              <li className="nav-item menu-link">Connect</li>
+            </Link>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+            <li className="nav-item"></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  )
 
-Header.defaultProps = {
-  siteTitle: `Brain Bastanza`,
+  Header.propTypes = {
+    siteTitle: PropTypes.string,
+  }
+
+  Header.defaultProps = {
+    siteTitle: `Brain Bastanza`,
+  }
 }
 
 export default Header
