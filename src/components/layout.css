@@ -619,6 +619,7 @@ pre tt:after {
 .menu-link {
   display: inline-block;
   position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .menu-link::before {
@@ -628,12 +629,14 @@ pre tt:after {
   transform: scale(0);
   height: 2px;
   background-color: white;
-  transform-origin: right;
+  transform-origin: bottom right;
   left: 25%;
   transition: transform 0.6s ease-in-out;
 }
 
 .menu-link:hover::before {
   transform: scale(1);
-  transform-origin: left;
+  transform-origin: top left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }

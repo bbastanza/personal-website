@@ -1,60 +1,26 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
 
 function Header({ siteTitle }) {
   const linkStyle = {
     textDecoration: "none",
     padding: 8,
     borderRadius: 3,
-    fontWeight: "bold",
     color: "white",
   }
   const activeStyle = {
     backgroundColor: "white",
     color: "#313131",
-    padding: "8px 8px 0 8px",
   }
-
-  return (
-    <header>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark bg-dark"
-        style={{ justifyContent: "space-between" }}
-      >
-        <Link to="/" className="navbar-brand  menu-link">
-          <h1>Brian Bastanza</h1>
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <Link to="/" style={linkStyle} activeStyle={activeStyle}>
-              <li className="nav-item  menu-link ">Home</li>
-            </Link>
-            <Link to="/Portfolio" style={linkStyle} activeStyle={activeStyle}>
-              <li className="nav-item  menu-link">Portfolio</li>
-            </Link>
-            <Link to="/Connect" style={linkStyle} activeStyle={activeStyle}>
-              <li className="nav-item menu-link">Connect</li>
-            </Link>
-
-            <li className="nav-item"></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  )
+  const brandStyle = {
+    textDecoration: "none",
+    color: "white",
+    fontSize: 40,
+    fontWeight: "bold",
+  }
 
   Header.propTypes = {
     siteTitle: PropTypes.string,
@@ -63,6 +29,38 @@ function Header({ siteTitle }) {
   Header.defaultProps = {
     siteTitle: `Brain Bastanza`,
   }
+
+  return (
+    <header>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand className="menu-link">
+          <Link to="/" style={brandStyle}>
+            {siteTitle}
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link className="menu-link">
+              <Link to="/" style={linkStyle} activeStyle={activeStyle}>
+                Home
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="menu-link">
+              <Link to="/Portfolio" style={linkStyle} activeStyle={activeStyle}>
+                Portfolio
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="menu-link">
+              <Link style={linkStyle} activeStyle={activeStyle} to="/Connect">
+                Connect
+              </Link>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
+  )
 }
 
 export default Header
