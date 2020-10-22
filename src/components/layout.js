@@ -53,17 +53,17 @@ const Layout = ({ children }) => {
 
             <Link to="/">
               {" "}
-              <button style={{ margin: 2 }} className="btn btn-info">
+              <button style={{ margin: 2 }} className="btn btn-info menu-link">
                 Home
               </button>
             </Link>
             <Link to="/Portfolio">
-              <button style={{ margin: 2 }} className="btn btn-info">
+              <button style={{ margin: 2 }} className="btn btn-info menu-link">
                 Portfolio
               </button>
             </Link>
             <Link to="/Connect">
-              <button style={{ margin: 2 }} className="btn btn-info">
+              <button style={{ margin: 2 }} className="btn btn-info menu-link">
                 Connect
               </button>
             </Link>

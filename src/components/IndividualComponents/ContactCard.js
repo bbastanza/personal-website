@@ -8,7 +8,7 @@ export default function ContactCard(props) {
         className="contact"
       >
         <img src={props.image} alt="icon" />
-        <h6 className="btn btn-dark">{props.name}</h6>
+        <h6 className="btn btn-dark menu-link">{props.name}</h6>
       </div>
     </a>
   )
