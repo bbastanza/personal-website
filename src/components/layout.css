@@ -630,7 +630,7 @@ pre tt:after {
   height: 2px;
   background-color: white;
   transform-origin: bottom right;
-  bottom: 10%;
+  bottom: 15%;
   left: 25%;
   transition: transform 0.4s ease-in-out;
 }
