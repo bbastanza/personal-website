@@ -60,7 +60,7 @@ function IndexPage() {
           <li>CSS</li>
         </ul>
       </div>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <img style={style} src={csharpLogo} alt="csharp" />
         <img style={style} src={dotnetLogo} alt="dotnet" />
         <img style={style} src={sqlLogo} alt="sql" />

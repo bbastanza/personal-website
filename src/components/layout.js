@@ -32,11 +32,12 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
+          justifyContent: "center",
         }}
       >
         <main>{children}</main>
         <div style={{ textAlign: "center" }}>
-          <Back2Top scrollDuration="200">
+          <Back2Top scrollDuration={200}>
             <button className="btn btn-info menu-link">Back To Top</button>
           </Back2Top>
         </div>
