@@ -54,10 +54,15 @@ const Portfolio = () => {
       >
         Portfolio
       </h1>
-      <PortfolioCard data={twitterData} />
-      <PortfolioCard data={swapiData} />
-      <PortfolioCard data={snakeData} />
-      <PortfolioCard data={expenseData} />
+      <div style={{ textAlign: "center" }}>
+        <PortfolioCard data={twitterData} />
+        <hr />
+        <PortfolioCard data={swapiData} />
+        <hr />
+        <PortfolioCard data={snakeData} />
+        <hr />
+        <PortfolioCard data={expenseData} />
+      </div>
     </Layout>
   )
 }

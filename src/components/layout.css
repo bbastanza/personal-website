@@ -602,24 +602,29 @@ pre tt:after {
 .contact {
   border-radius: 10px;
   transition: 0.7s;
+  -webkit-transform: scale(1);
 }
 .contact:hover {
   scale: 1.05;
+  -webkit-transform: scale(1.05);
   background-color: #d7f9ff;
 }
 
 .portfolio-image {
   transition: 0.7s;
   margin-top: 30px;
+  -webkit-transform: scale(1);
 }
 .portfolio-image:hover {
   scale: 1.05;
+  -webkit-transform: scale(1.05);
 }
 
 .menu-link {
   display: inline-block;
   position: relative;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .menu-link::before {
@@ -638,6 +643,4 @@ pre tt:after {
 .menu-link:hover::before {
   transform: scale(1);
   transform-origin: top left;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }

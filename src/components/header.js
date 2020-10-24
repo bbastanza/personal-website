@@ -19,7 +19,6 @@ function Header({ siteTitle }) {
     textDecoration: "none",
     color: "white",
     fontSize: 40,
-    fontWeight: "bold",
   }
 
   Header.propTypes = {
@@ -41,21 +40,30 @@ function Header({ siteTitle }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="menu-link">
-              <Link to="/" style={linkStyle} activeStyle={activeStyle}>
-                Home
-              </Link>
-            </Nav.Link>
-            <Nav.Link className="menu-link">
-              <Link to="/Portfolio" style={linkStyle} activeStyle={activeStyle}>
-                Portfolio
-              </Link>
-            </Nav.Link>
-            <Nav.Link className="menu-link">
-              <Link style={linkStyle} activeStyle={activeStyle} to="/Connect">
-                Connect
-              </Link>
-            </Nav.Link>
+            <Link
+              to="/"
+              className="menu-link"
+              style={linkStyle}
+              activeStyle={activeStyle}
+            >
+              Home
+            </Link>
+            <Link
+              to="/Portfolio"
+              className="menu-link"
+              style={linkStyle}
+              activeStyle={activeStyle}
+            >
+              Portfolio
+            </Link>
+            <Link
+              style={linkStyle}
+              className="menu-link"
+              activeStyle={activeStyle}
+              to="/Connect"
+            >
+              Connect
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

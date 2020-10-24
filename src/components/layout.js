@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import Back2Top from "react-back2top"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -35,40 +35,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-
-        <footer
-          style={{
-            marginTop: `2rem`,
-            justifyContent: "space-between",
-            backgroundColor: "#f3f3f3",
-            borderRadius: 5,
-            paddingTop: 12,
-            color: "#313131",
-          }}
-        >
-          <div style={{ display: "flex", padding: 10 }}>
-            <p style={{ marginRight: "auto", padding: "10px 10px 0 10px" }}>
-              © {new Date().getFullYear()} <strong>Brian Bastanza</strong>
-            </p>
-
-            <Link to="/">
-              {" "}
-              <button style={{ margin: 2 }} className="btn btn-info menu-link">
-                Home
-              </button>
-            </Link>
-            <Link to="/Portfolio">
-              <button style={{ margin: 2 }} className="btn btn-info menu-link">
-                Portfolio
-              </button>
-            </Link>
-            <Link to="/Connect">
-              <button style={{ margin: 2 }} className="btn btn-info menu-link">
-                Connect
-              </button>
-            </Link>
-          </div>
-        </footer>
+        <div style={{ textAlign: "center" }}>
+          <Back2Top scrollDuration="200">
+            <button className="btn btn-info menu-link">Back To Top</button>
+          </Back2Top>
+        </div>
       </div>
     </>
   )

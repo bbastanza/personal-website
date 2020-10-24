@@ -35,22 +35,22 @@ const Connect = () => {
           free to reach out!
         </p>
       </div>
-      <div style={{ display: "flex" }}>
-        <div style={{ padding: 20, marginTop: 16 }}>
+      <div className="row" style={{ justifyContent: "center" }}>
+        <div className="col-lg-4 col-md-6 col-sm-12" style={{ padding: 20 }}>
           <ContactCard
             name="GitHub"
             image={githubImage}
             link="https://github.com/bbastanza"
           />
         </div>
-        <div style={{ marginTop: 1, padding: 20 }}>
+        <div className="col-lg-4 col-md-6 col-sm-12" style={{ padding: 20 }}>
           <ContactCard
             name="LinkedIn"
             image={linkedInImage}
             link="https://www.linkedin.com/in/brian-bastanza-9035397b"
           />
         </div>
-        <div style={{ padding: 20, marginTop: 16 }}>
+        <div className="col-lg-4 col-md-6 col-sm-12" style={{ padding: 20 }}>
           <ContactCard
             name="Email"
             image={emailImage}
