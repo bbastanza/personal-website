@@ -37,9 +37,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
 
-        <hr />
         <div style={{ textAlign: "center" }}>
           <Back2Top scrollDuration={200}>
+            <hr />
             <button className="btn btn-info menu-link">Back To Top</button>
           </Back2Top>
         </div>
