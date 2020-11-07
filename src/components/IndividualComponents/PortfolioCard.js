@@ -2,7 +2,7 @@ import React from "react"
 
 export default function PortfolioCard({ data }) {
   return (
-    <div className="row" style={{ padding: 20 }}>
+    <div className="row" style={{ padding: 20, minWidth: 300 }}>
       <div className="col-md-6 col-sm-12 row" style={{ padding: 20 }}>
         <h2 className="col-12" style={{ color: "#313131" }}>
           {data.title}

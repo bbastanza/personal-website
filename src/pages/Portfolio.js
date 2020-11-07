@@ -50,6 +50,7 @@ const Portfolio = () => {
           textDecoration: "underline",
           textDecorationThickness: 5,
           color: "#313131",
+          whiteSpace: "nowrap",
         }}
       >
         Portfolio

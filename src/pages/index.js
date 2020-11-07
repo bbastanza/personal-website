@@ -11,6 +11,7 @@ import reactLogo from "../images/LanguageLogos/react.png"
 import sqlLogo from "../images/LanguageLogos/sql2.png"
 import csharpLogo from "../images/LanguageLogos/c_sharp.png"
 import bootstrapLogo from "../images/LanguageLogos/bootstrap.png"
+import personalPhoto from "../images/portfolio.jpg"
 
 function IndexPage() {
   const style = {
@@ -29,6 +30,7 @@ function IndexPage() {
           textDecorationThickness: 5,
           width: "auto",
           color: "#313131",
+          whiteSpace: "nowrap",
         }}
       >
         Welcome
@@ -40,8 +42,16 @@ function IndexPage() {
           borderRadius: 5,
           color: "#313131",
           backgroundColor: "#f3f3f3",
+          minWidth: 200,
         }}
       >
+        <div style={{ textAlign: "center" }}>
+          <img
+            src={personalPhoto}
+            alt="Brian Bastanza"
+            style={{ width: "60%", borderRadius: 10, minWidth: 150 }}
+          />
+        </div>
         <p style={{ padding: "20px 20px 20px 10px" }}>
           {"    "}My name is <strong>Brian Bastanza</strong> and am a{" "}
           <em>full stack web developer</em> out of Lake Tahoe, CA. I am a

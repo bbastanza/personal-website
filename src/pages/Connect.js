@@ -16,6 +16,7 @@ const Connect = () => {
           textDecoration: "underline",
           textDecorationThickness: 5,
           color: "#313131",
+          whiteSpace: "nowrap",
         }}
       >
         Connect
@@ -27,6 +28,7 @@ const Connect = () => {
           borderRadius: 5,
           color: "#313131",
           backgroundColor: "#f3f3f3",
+          minWidth: 300,
         }}
       >
         <p style={{ padding: "20px 20px 20px 10px" }}>
@@ -35,7 +37,7 @@ const Connect = () => {
           free to reach out!
         </p>
       </div>
-      <div className="row" style={{ justifyContent: "center" }}>
+      <div className="row" style={{ justifyContent: "center", minWidth: 300 }}>
         <div className="col-lg-4 col-md-6 col-sm-12" style={{ padding: 20 }}>
           <ContactCard
             name="GitHub"
