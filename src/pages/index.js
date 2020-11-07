@@ -11,7 +11,7 @@ import reactLogo from "../images/LanguageLogos/react.png"
 import sqlLogo from "../images/LanguageLogos/sql2.png"
 import csharpLogo from "../images/LanguageLogos/c_sharp.png"
 import bootstrapLogo from "../images/LanguageLogos/bootstrap.png"
-import personalPhoto from "../images/portfolio-1.png"
+import personalPhoto from "../images/portfolio.jpg"
 
 function IndexPage() {
   const style = {
