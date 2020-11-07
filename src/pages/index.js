@@ -49,12 +49,24 @@ function IndexPage() {
           <img
             src={personalPhoto}
             alt="Brian Bastanza"
+<<<<<<< HEAD
             style={{ width: "60%", borderRadius: 10, minWidth: 150 }}
           />
         </div>
+=======
+            style={{
+              borderRadius: 10,
+              width: "60%",
+              marginLeft: "auto",
+              minWidth: 150,
+            }}
+          />
+        </div>
+
+>>>>>>> 341a19c621eae65e347bba4972e12ea981fe4bae
         <p style={{ padding: "20px 20px 20px 10px" }}>
           {"    "}My name is <strong>Brian Bastanza</strong> and am a{" "}
-          <em>full stack web developer</em> out of Lake Tahoe, CA. I am a
+          <em>full stack web developer</em> out of Tahoe City, CA. I am a
           student of web development and am passionate about building projects,
           learning code and getting better. I have used and am continuing to
           learn the following technologies:{" "}
