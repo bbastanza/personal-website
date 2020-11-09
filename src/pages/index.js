@@ -3,6 +3,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TechCard from "../components/IndividualComponents/TechCard"
 import htmlLogo from "../images/LanguageLogos/html.png"
 import cssLogo from "../images/LanguageLogos/css.png"
 import dotnetLogo from "../images/LanguageLogos/dotnetcore.png"
@@ -14,9 +15,6 @@ import bootstrapLogo from "../images/LanguageLogos/bootstrap.png"
 import personalPhoto from "../images/portfolio.jpg"
 
 function IndexPage() {
-  const style = {
-    padding: 7,
-  }
   const techStyle = {
     fontWeight: "bold",
   }
@@ -45,40 +43,43 @@ function IndexPage() {
           minWidth: 200,
         }}
       >
-        <div style={{ textAlign: "center" }}>
-          <img
-            src={personalPhoto}
-            alt="Brian Bastanza"
-            style={{ width: "60%", borderRadius: 10, minWidth: 150 }}
-          />
+        <div style={{ padding: "20px 20px 0 10px" }}>
+          <div style={{ textAlign: "center" }}>
+            <img
+              src={personalPhoto}
+              alt="Brian Bastanza"
+              style={{ width: "60%", borderRadius: 10, minWidth: 150 }}
+            />
+          </div>
+          <p>
+            My name is <strong>Brian Bastanza</strong> and am a{" "}
+            <em>full stack web developer</em> out of Tahoe City, CA and I love
+            seeing new projects come to life! Being a self taught developer, I
+            have ran into many roadblocks along the way, however I pride myself
+            on my ability to find solutions by being creative in the development
+            process.
+          </p>
+
+          <p>
+            Striving to push myself outside of my comfort zone, I am passionate
+            about constructing complex applications using ASP.Net and React JS.
+            I continue to push my personal development boundaries and find ways
+            to write cleaner, more elegant code. I am driven to produce projects
+            that are exciting and different than what I am used to.
+          </p>
+          <p>I have used and continue to grow in the following technologies:</p>
         </div>
-        <p style={{ padding: "20px 20px 20px 10px" }}>
-          {"    "}My name is <strong>Brian Bastanza</strong> and am a{" "}
-          <em>full stack web developer</em> out of Tahoe City, CA. I am a
-          student of web development and am passionate about building projects,
-          learning code and getting better. I have used and am continuing to
-          learn the following technologies:{" "}
-        </p>
-        <ul style={techStyle}>
-          <li>C#</li>
-          <li>ASP.NET</li>
-          <li>SQL</li>
-          <li>JavaScript</li>
-          <li>React JS</li>
-          <li>Bootstrap 4</li>
-          <li>HTML 5</li>
-          <li>CSS</li>
-        </ul>
       </div>
-      <div style={{ textAlign: "center" }}>
-        <img style={style} src={csharpLogo} alt="csharp" />
-        <img style={style} src={dotnetLogo} alt="dotnet" />
-        <img style={style} src={sqlLogo} alt="sql" />
-        <img style={style} src={jsLogo} alt="js" />
-        <img style={style} src={reactLogo} alt="react" />
-        <img style={style} src={bootstrapLogo} alt="bootstrap" />
-        <img style={style} src={htmlLogo} alt="html" />
-        <img style={style} src={cssLogo} alt="css" />
+
+      <div style={{ textAlign: "center", display: "flex" }}>
+        <TechCard src={csharpLogo} title="C#" />
+        <TechCard src={dotnetLogo} title="ASP.NET" />
+        <TechCard src={sqlLogo} title="SQL" />
+        <TechCard src={jsLogo} title="JavaScript" />
+        <TechCard src={reactLogo} title="React JS" />
+        <TechCard src={bootstrapLogo} title="Bootstrap 4" />
+        <TechCard src={htmlLogo} title="HTML 5" />
+        <TechCard src={cssLogo} title="CSS" />
       </div>
     </Layout>
   )
