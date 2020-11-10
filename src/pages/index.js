@@ -55,15 +55,14 @@ function IndexPage() {
             I am a <em>full stack web developer</em> out of Tahoe City, CA. My
             ability to find solutions by being creative in the development
             process is something I take pride in. Building software is
-            captivating to me and it is remarkably exciting to see new projects
-            come to life!
+            captivating and it is remarkably exciting to see new projects come
+            to life!
           </p>
-
           <p>
             Striving to push myself outside of my comfort zone, I am passionate
             about constructing complex applications using ASP.Net and React JS.
             Extending my personal development boundaries and finding new ways to
-            write cleaner, more elegant code is very important to me.
+            write elegant code is essential.
           </p>
           <p>
             <em>What drives me?</em> Producing projects that are challenging and
