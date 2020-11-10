@@ -7,7 +7,7 @@ export default function PortfolioCard({ data }) {
         <h2 className="col-12" style={{ color: "#313131" }}>
           {data.title}
         </h2>
-        <p className="col-12" style={{ color: "#313131" }}>
+        <p className="col-12" style={{ color: "#313131", textAlign: "left" }}>
           {data.description}
         </p>
         <div className="col-12">
