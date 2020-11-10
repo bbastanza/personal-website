@@ -63,14 +63,17 @@ function IndexPage() {
             Striving to push myself outside of my comfort zone, I am passionate
             about constructing complex applications using ASP.Net and React JS.
             Extending my personal development boundaries and finding new ways to
-            write cleaner, more elegant code is very important to me. What
-            drives me? Producing projects that are exciting and different than
-            what I am used to.
+            write cleaner, more elegant code is very important to me.
           </p>
-          <p>I have used and continue to grow in the following technologies:</p>
+          <p>
+            <em>What drives me?</em> Producing projects that are challenging and
+            new.
+          </p>
         </div>
       </div>
-
+      <div style={{ textAlign: "center" }}>
+        <p>I have used and continue to grow in the following technologies:</p>
+      </div>
       <div
         style={{ textAlign: "center", justifyContent: "center" }}
         className="row"
