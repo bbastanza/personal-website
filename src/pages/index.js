@@ -52,20 +52,18 @@ function IndexPage() {
             />
           </div>
           <p>
-            My name is <strong>Brian Bastanza</strong> and am a{" "}
-            <em>full stack web developer</em> out of Tahoe City, CA and I love
-            seeing new projects come to life! Being a self taught developer, I
-            have ran into many roadblocks along the way, however I pride myself
-            on my ability to find solutions by being creative in the development
-            process.
+            I am a <em>full stack web developer</em> out of Tahoe City, CA. I
+            pride myself on my ability to find solutions by being creative in
+            the development process. Building software is captivating to me and
+            it is remarkably exciting to see new projects come to life!
           </p>
 
           <p>
             Striving to push myself outside of my comfort zone, I am passionate
             about constructing complex applications using ASP.Net and React JS.
-            I continue to push my personal development boundaries and find ways
-            to write cleaner, more elegant code. I am driven to produce projects
-            that are exciting and different than what I am used to.
+            I continue to extend my personal development boundaries and to find
+            ways to write cleaner, more elegant code. I am driven to produce
+            projects that are exciting and different than what I am used to.
           </p>
           <p>I have used and continue to grow in the following technologies:</p>
         </div>
