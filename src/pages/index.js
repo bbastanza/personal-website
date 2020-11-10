@@ -62,8 +62,8 @@ function IndexPage() {
             Striving to push myself outside of my comfort zone, I am passionate
             about constructing complex applications using ASP.Net and React JS.
             I continue to extend my personal development boundaries and to find
-            ways to write cleaner, more elegant code. I am driven to produce
-            projects that are exciting and different than what I am used to.
+            ways to write cleaner, more elegant code. Producing projects that
+            are exciting and different than what I am used to is what drives me.
           </p>
           <p>I have used and continue to grow in the following technologies:</p>
         </div>
