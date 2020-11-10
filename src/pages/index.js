@@ -62,7 +62,7 @@ function IndexPage() {
             Striving to push myself outside of my comfort zone, I am passionate
             about constructing complex applications using ASP.Net and React JS.
             Extending my personal development boundaries and finding new ways to
-            write elegant code is essential.
+            write elegant code is essential to me.
           </p>
           <p>
             <em>What drives me?</em> Producing projects that are challenging and
