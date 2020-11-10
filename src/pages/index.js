@@ -52,24 +52,29 @@ function IndexPage() {
             />
           </div>
           <p>
-            I am a <em>full stack web developer</em> out of Tahoe City, CA. I
-            pride myself on my ability to find solutions by being creative in
-            the development process. Building software is captivating to me and
-            it is remarkably exciting to see new projects come to life!
+            I am a <em>full stack web developer</em> out of Tahoe City, CA. My
+            ability to find solutions by being creative in the development
+            process is something I take pride in. Building software is
+            captivating to me and it is remarkably exciting to see new projects
+            come to life!
           </p>
 
           <p>
             Striving to push myself outside of my comfort zone, I am passionate
             about constructing complex applications using ASP.Net and React JS.
-            I continue to extend my personal development boundaries and to find
-            ways to write cleaner, more elegant code. Producing projects that
-            are exciting and different than what I am used to is what drives me.
+            Extending my personal development boundaries and finding new ways to
+            write cleaner, more elegant code is very important to me. What
+            drives me? Producing projects that are exciting and different than
+            what I am used to.
           </p>
           <p>I have used and continue to grow in the following technologies:</p>
         </div>
       </div>
 
-      <div style={{ textAlign: "center", display: "flex" }}>
+      <div
+        style={{ textAlign: "center", justifyContent: "center" }}
+        className="row"
+      >
         <TechCard src={csharpLogo} title="C#" />
         <TechCard src={dotnetLogo} title="ASP.NET" />
         <TechCard src={sqlLogo} title="SQL" />
