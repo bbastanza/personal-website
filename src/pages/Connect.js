@@ -49,7 +49,7 @@ const Connect = () => {
           <ContactCard
             name="LinkedIn"
             image={linkedInImage}
-            link="https://www.linkedin.com/in/brian-bastanza-9035397b"
+            link="https://www.linkedin.com/in/bbastanza"
           />
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12" style={{ padding: 20 }}>
