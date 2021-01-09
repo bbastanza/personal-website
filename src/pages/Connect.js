@@ -5,7 +5,7 @@ import ContactCard from "../components/IndividualComponents/ContactCard"
 import githubImage from "../images/github.png"
 import linkedInImage from "../images/linkedin.png"
 import emailImage from "../images/email.png"
-
+// something
 const Connect = () => {
   return (
     <Layout>
