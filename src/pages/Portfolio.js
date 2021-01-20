@@ -37,7 +37,7 @@ const Portfolio = () => {
   const stockData = {
     title: "Dream Trader",
     description:
-        "Dream Trader is a full stack web application utilizing a .Net Core Backend, React JS Frontend and a PostgreSQL database. The project uses stock data from the iexcloud.io api and makes user transactions based on real stock data and user input. The purpose of building this application was to learn to make a complex web application using a database and to dive deeper into ASP.NET, while continuing to polish my React JS skills.",
+        "Dream Trader is a full stack web application utilizing a .Net Core Backend, React JS frontend and a PostgreSQL database. The project uses stock data from the iexcloud.io api and makes user transactions based on real stock data and user input. The purpose of building this application was to learn to make a complex web application using a database and to dive deeper into ASP.NET, while continuing to polish my React JS skills.",
     image: stockSS,
     link: "https://dreamtrader.azurewebsites.net/",
     github: "https://github.com/bbastanza/Fantasy-Stock-Trader",
