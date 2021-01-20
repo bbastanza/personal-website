@@ -5,7 +5,7 @@ import PortfolioCard from "../components/IndividualComponents/PortfolioCard"
 import twitterSS from "../images/twitterss.png"
 import snakeSS from "../images/snakess.png"
 import swapiSS from "../images/swapiss.png"
-import expenseSS from "../images/expensess.png"
+import stockSS from "../images/stockss.png"
 
 const Portfolio = () => {
   const twitterData = {
@@ -33,13 +33,14 @@ const Portfolio = () => {
     link: "https://bbastanza.github.io/Frozen-Snake-Game/",
     github: "https://github.com/bbastanza/Frozen-Snake-Game",
   }
-  const expenseData = {
-    title: " React Expense Tracker",
+
+  const stockData = {
+    title: "Dream Trader",
     description:
-      "Here is a simple expense tracker built in React JS. I started from scratch when building this app. I learned all about how React manipulates the virtual dom to display a web application. The syntax was very different from what I was used to. Now that I am comfortable with it I see how powerful it can be.",
-    image: expenseSS,
-    link: "https://bb-expense-react.herokuapp.com/",
-    github: "https://github.com/bbastanza/Expense-Tracker-React",
+        "Dream Trader is a full stack web application utilizing a .Net Core Backend, React JS Frontend and a PostgreSQL database. The project uses stock data from the iexcloud.io api and makes user transactions based on real stock data and user input. The purpose of building this application was to learn to make a complex web application using a database and to dive deeper into ASP.NET, while continuing to polish my React JS skills.",
+    image: stockSS,
+    link: "https://dreamtrader.azurewebsites.net/",
+    github: "https://github.com/bbastanza/Fantasy-Stock-Trader",
   }
 
   return (
@@ -57,13 +58,13 @@ const Portfolio = () => {
         Portfolio
       </h1>
       <div style={{ textAlign: "center" }}>
+        <PortfolioCard data={stockData} />
+        <hr />
         <PortfolioCard data={twitterData} />
         <hr />
         <PortfolioCard data={swapiData} />
         <hr />
         <PortfolioCard data={snakeData} />
-        <hr />
-        <PortfolioCard data={expenseData} />
       </div>
     </Layout>
   )
