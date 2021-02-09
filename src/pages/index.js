@@ -8,6 +8,7 @@ import htmlLogo from "../images/LanguageLogos/html.png"
 import cssLogo from "../images/LanguageLogos/css.png"
 import dotnetLogo from "../images/LanguageLogos/dotnetcore.png"
 import jsLogo from "../images/LanguageLogos/javascript.png"
+import tsLogo from "../images/LanguageLogos/typescript.png"
 import reactLogo from "../images/LanguageLogos/react.png"
 import sqlLogo from "../images/LanguageLogos/sql2.png"
 import csharpLogo from "../images/LanguageLogos/c_sharp.png"
@@ -77,14 +78,15 @@ function IndexPage() {
         style={{ textAlign: "center", justifyContent: "center" }}
         className="row"
       >
-        <TechCard src={csharpLogo} title="C#" />
-        <TechCard src={dotnetLogo} title="ASP.NET" />
-        <TechCard src={sqlLogo} title="SQL" />
-        <TechCard src={jsLogo} title="JavaScript" />
-        <TechCard src={reactLogo} title="React JS" />
-        <TechCard src={bootstrapLogo} title="Bootstrap 4" />
-        <TechCard src={htmlLogo} title="HTML 5" />
-        <TechCard src={cssLogo} title="CSS" />
+        <TechCard style={techStyle} src={csharpLogo} title="C#" />
+        <TechCard style={techStyle} src={dotnetLogo} title="ASP.NET" />
+        <TechCard style={techStyle} src={sqlLogo} title="SQL" />
+        <TechCard style={techStyle} src={jsLogo} title="JavaScript" />
+        <TechCard style={techStyle} src={tsLogo} title="TypeScript" />
+        <TechCard style={techStyle} src={reactLogo} title="React" />
+        <TechCard style={techStyle} src={bootstrapLogo} title="Bootstrap 4" />
+        <TechCard style={techStyle} src={htmlLogo} title="HTML 5" />
+        <TechCard style={techStyle} src={cssLogo} title="CSS" />
       </div>
     </Layout>
   )
