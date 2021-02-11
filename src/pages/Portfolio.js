@@ -22,8 +22,8 @@ const Portfolio = () => {
     description:
       "Sort It! is an application to visualize popular sorting algorithms. The purpose of this project was to learn more about data structures and algorithms. I have been diving deeper into computer science topics and found that this project would be a perfect opportunity to showcase this. This was also a great opportunity to explore building an application in TypeScript and continue to build upon my React skills.",
     image: sortitSS,
-    link: "https://bb-star-wars-api.herokuapp.com/",
-    github: "https://github.com/bbastanza/Star-Wars-API",
+    link: "https://suspicious-bassi-689da4.netlify.app/",
+    github: "https://github.com/bbastanza/Sort-It",
   }
 
   const snakeData = {
