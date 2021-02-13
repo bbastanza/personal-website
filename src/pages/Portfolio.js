@@ -61,9 +61,9 @@ const Portfolio = () => {
       <div style={{ textAlign: "center" }}>
         <PortfolioCard data={stockData} />
         <hr />
-        <PortfolioCard data={twitterData} />
-        <hr />
         <PortfolioCard data={sortitData} />
+        <hr />
+        <PortfolioCard data={twitterData} />
         <hr />
         <PortfolioCard data={snakeData} />
       </div>
