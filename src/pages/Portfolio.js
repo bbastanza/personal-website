@@ -13,7 +13,7 @@ const Portfolio = () => {
     description:
       "Twitter Showcase is a full-stack web app to view date from the Twitter API. The back end server is built in ASP.NET Core C# and the front end client is built in React JS. I built this app to learn the complexities of building a web application from top to bottom and to further my knowledge of C#, .Net, React, Bootstrap and to learn how to seperate conserns between back end development and front end development.",
     image: twitterSS,
-    link: "https://twittershowcase.azurewebsites.net/",
+    link: "https://twittershowcaseapplication.azurewebsites.net/",
     github: "https://github.com/bbastanza/Twitter-Showcase",
   }
 
